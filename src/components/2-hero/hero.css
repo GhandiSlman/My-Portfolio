@@ -1,0 +1,180 @@
+section.hero {
+  min-height: calc(100vh - 90px);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 4rem;
+  padding: 4rem 0;
+}
+
+/* ================= LEFT ================= */
+
+section.hero .left-section {
+  flex: 1;
+}
+
+section.hero .avatar {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid var(--blue);
+  margin-bottom: 1.5rem;
+  box-shadow: 0 0 40px rgba(0, 149, 246, 0.25);
+}
+
+section.hero .badge {
+  display: inline-block;
+  padding: 8px 18px;
+  margin-bottom: 1.5rem;
+  border-radius: 50px;
+  background: rgba(0, 149, 246, 0.15);
+  color: var(--blue);
+  border: 1px solid rgba(0, 149, 246, 0.3);
+  font-size: .9rem;
+  font-weight: 500;
+}
+
+section.hero .title {
+  font-size: 3.7rem;
+  line-height: 1.15;
+  color: var(--title);
+  margin-bottom: 1.5rem;
+}
+
+section.hero .title span {
+  color: var(--blue);
+}
+
+section.hero .sub-title {
+  color: var(--subtitle);
+  font-size: 1.1rem;
+  line-height: 1.9;
+  max-width: 620px;
+  margin-bottom: 2.5rem;
+}
+
+/* ================= BUTTONS ================= */
+
+.hero-buttons {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2.5rem;
+  flex-wrap: wrap;
+}
+
+.hero-buttons button {
+  padding: 14px 28px;
+  border-radius: 10px;
+  font-size: .95rem;
+  font-weight: 600;
+  transition: .3s;
+}
+
+.primary-btn {
+  background: var(--blue);
+  color: white;
+}
+
+.primary-btn:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px rgba(0,149,246,.3);
+}
+
+.secondary-btn {
+  border: 1px solid var(--border);
+  color: var(--title);
+}
+
+.secondary-btn:hover {
+  background: rgba(255,255,255,.05);
+}
+
+/* ================= ICONS ================= */
+
+.all-icons {
+  display: flex;
+  gap: 1.5rem;
+  font-size: 1.4rem;
+}
+
+.all-icons a {
+  color: var(--subtitle);
+}
+
+.all-icons a:hover {
+  color: var(--blue);
+  transform: translateY(-3px);
+}
+
+/* ================= RIGHT ================= */
+
+section.hero .right-section {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section.hero .right-section svg {
+  width: 100%;
+  max-width: 520px;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 992px) {
+
+  section.hero {
+    flex-direction: column-reverse;
+    text-align: center;
+    gap: 2rem;
+    min-height: auto;
+  }
+
+  section.hero .sub-title {
+    margin-inline: auto;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+  }
+
+  .all-icons {
+    justify-content: center;
+  }
+
+  section.hero .title {
+    font-size: 2.7rem;
+  }
+
+  section.hero .avatar {
+    width: 110px;
+    height: 110px;
+  }
+}
+
+@media (max-width:600px){
+
+  section.hero{
+    padding:2rem 0;
+  }
+
+  section.hero .title{
+    font-size:2.2rem;
+  }
+
+  section.hero .sub-title{
+    font-size:1rem;
+    line-height:1.8;
+  }
+
+  .hero-buttons{
+    flex-direction:column;
+  }
+
+  .hero-buttons button{
+    width:100%;
+  }
+
+}
