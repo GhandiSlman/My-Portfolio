@@ -1,0 +1,446 @@
+.contact{
+
+    padding:90px 0;
+
+}
+
+
+
+/* ============================
+   TITLE
+============================ */
+
+
+.contact-title{
+
+    text-align:center;
+
+    margin-bottom:70px;
+
+}
+
+
+
+.contact-title span{
+
+    color:var(--blue);
+
+    letter-spacing:2px;
+
+    font-weight:600;
+
+}
+
+
+
+.contact-title h2{
+
+    color:var(--title);
+
+    font-size:2.8rem;
+
+    margin:15px 0;
+
+}
+
+
+
+.contact-title p{
+
+    color:var(--subtitle);
+
+    line-height:1.8;
+
+}
+
+
+
+/* ============================
+   SOCIAL CONTAINER
+============================ */
+
+
+.social-links{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:60px;
+
+    flex-wrap:wrap;
+
+}
+
+
+
+/* ============================
+   3D BOX
+============================ */
+
+
+.social-links a{
+
+    position:relative;
+
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+
+    gap:12px;
+
+
+    width:160px;
+
+    height:60px;
+
+
+    background:#1b2432;
+
+
+    color:var(--title);
+
+
+    border:1px solid var(--border);
+
+
+    border-radius:0;
+
+
+    text-decoration:none;
+
+
+
+    transform:
+    rotate(-15deg)
+    skew(10deg);
+
+
+
+    box-shadow:
+
+    -15px 15px 25px rgba(0,0,0,.35);
+
+
+
+    transition:.4s;
+
+}
+
+
+
+
+/* ICON */
+
+
+.social-links a svg{
+
+    font-size:24px;
+
+    color:var(--blue);
+
+    transition:.3s;
+
+}
+
+
+
+
+/* TEXT */
+
+
+.social-links span{
+
+    font-size:.95rem;
+
+    font-weight:600;
+
+    color:var(--title);
+
+    transition:.3s;
+
+}
+
+
+
+/* ============================
+   LEFT SIDE DEPTH
+============================ */
+
+
+.social-links a::before{
+
+    content:"";
+
+
+    position:absolute;
+
+
+    left:-10px;
+
+
+    top:5px;
+
+
+
+    width:10px;
+
+
+    height:100%;
+
+
+
+    background:#111827;
+
+
+
+    border-radius:0;
+
+
+
+    transform:
+
+    skewY(-45deg);
+
+}
+
+
+
+/* ============================
+   BOTTOM DEPTH
+============================ */
+
+
+.social-links a::after{
+
+    content:"";
+
+
+    position:absolute;
+
+
+    left:-5px;
+
+
+    bottom:-10px;
+
+
+
+    width:100%;
+
+
+    height:10px;
+
+
+
+    background:#0f172a;
+
+
+
+    border-radius:0;
+
+
+
+    transform:
+
+    skewX(-45deg);
+
+}
+
+
+
+/* ============================
+   HOVER
+============================ */
+
+
+.social-links a:hover{
+
+
+    border-radius:0;
+
+
+    transform:
+
+    rotate(-15deg)
+
+    skew(10deg)
+
+    translate(15px,-15px);
+
+
+
+    box-shadow:
+
+    -45px 45px 45px rgba(0,0,0,.55);
+
+}
+
+
+
+.social-links a:hover svg,
+
+.social-links a:hover span{
+
+    color:white;
+
+}
+
+
+
+/* ============================
+   WHATSAPP
+============================ */
+
+
+.whatsapp:hover{
+
+    background:#25D366;
+
+}
+
+
+
+.whatsapp:hover::before{
+
+    background:#128C7E;
+
+}
+
+
+
+.whatsapp:hover::after{
+
+    background:#075E54;
+
+}
+
+
+
+/* ============================
+   EMAIL
+============================ */
+
+
+.email:hover{
+
+    background:#db4437;
+
+}
+
+
+
+.email:hover::before{
+
+    background:#b23121;
+
+}
+
+
+
+.email:hover::after{
+
+    background:#8a1c11;
+
+}
+
+
+
+/* ============================
+   LINKEDIN
+============================ */
+
+
+.linkedin:hover{
+
+    background:#0a66c2;
+
+}
+
+
+
+.linkedin:hover::before{
+
+    background:#084d91;
+
+}
+
+
+
+.linkedin:hover::after{
+
+    background:#063b70;
+
+}
+
+
+
+/* ============================
+   GITHUB
+============================ */
+
+
+.github:hover{
+
+    background:#24292f;
+
+}
+
+
+
+.github:hover::before{
+
+    background:#171b1f;
+
+}
+
+
+
+.github:hover::after{
+
+    background:#0d1117;
+
+}
+
+
+
+/* ============================
+   MOBILE
+============================ */
+
+
+@media(max-width:700px){
+
+
+    .contact-title h2{
+
+        font-size:2rem;
+
+    }
+
+
+
+    .social-links{
+
+        gap:45px;
+
+    }
+
+
+
+    .social-links a{
+
+        width:150px;
+
+        height:55px;
+
+    }
+
+
+}
